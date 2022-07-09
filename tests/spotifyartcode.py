@@ -1,4 +1,4 @@
-from bbsac import __version__
+from spotifyartcode.cli import __version__
 
 
 def test_version():
