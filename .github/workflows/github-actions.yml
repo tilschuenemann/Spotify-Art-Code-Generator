@@ -1,9 +1,9 @@
 name: Build
-on: ["push"]
+on: push
 
 jobs:
   build:
-    runs-on: ["ubuntu-latest", "macos-latest","windows-latest"]
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-python@v4
