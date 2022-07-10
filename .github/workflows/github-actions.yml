@@ -11,9 +11,11 @@ jobs:
       run: pipx install poetry
     - uses: actions/setup-python@v4
       with:
-        python-version: "3.10.5"
+        python-version: "3.10"
         cache: poetry
-    - run: poetry install
+    - run: |
+        poetry env use python3.10
+        poetry install
     - name: Lint with pyproject-flake8
       run: poetry run pflake8 --count --select=E9,F63,F7,F82 --show-source --statistics
     - name: Test with PyTest
