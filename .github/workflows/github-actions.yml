@@ -26,4 +26,4 @@ jobs:
         export POETRY_SPOTIPY_CLIENT_SECRET=${{ secrets.POETRY_SPOTIPY_CLIENT_SECRET }}
         poetry run pytest
     - name: Typechecking with MyPy
-      run: poetry run mypy
+      run: poetry run mypy spotifyartcode/cli
