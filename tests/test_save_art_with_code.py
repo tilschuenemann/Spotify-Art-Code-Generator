@@ -5,8 +5,8 @@ from PIL import Image
 from PIL import ImageChops
 
 import os
-print("id:" + os.getenv("SPOTIPY_CLIENT_ID"))
-print("se:" + os.getenv("SPOTIPY_CLIENT_SECRET"))
+print("id:" + os.getenv("POETRY_SPOTIPY_CLIENT_ID"))
+print("se:" + os.getenv("POETRY_SPOTIPY_CLIENT_SECRET"))
 
 sp = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials())
 
