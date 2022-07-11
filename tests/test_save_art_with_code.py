@@ -4,12 +4,7 @@ import spotipy
 from PIL import Image
 from PIL import ImageChops
 
-import os
-print("id:" + os.getenv("SPOTIPY_CLIENT_ID"))
-print("se:" + os.getenv("SPOTIPY_CLIENT_SECRET"))
-
 sp = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials())
-
 
 def test_save_art_with_code(tmp_path):
     # create empty output dir
